@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.media.*?>
+
+<AnchorPane fx:id="scene1" prefHeight="463.0" prefWidth="680.0" GridPane.rowIndex="1" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Controller">
+   <children>
+      <BorderPane prefHeight="463.0" prefWidth="679.0">
+         <left>
+            <VBox prefHeight="424.0" prefWidth="150.0" style="-fx-background-color: #7d6cc8;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="btn_open" mnemonicParsing="false" onAction="#openVideo" prefHeight="35.0" prefWidth="173.0" style="-fx-background-color: #7d6cc8;" text="Open" textFill="WHITE" />
+                  <Button fx:id="btn_marge" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#open_MargeVideos" prefHeight="35.0" prefWidth="173.0" style="-fx-background-color: #7d6cc8;" text="Marge videos" textFill="WHITE" />
+                  <Button fx:id="btn_delete" layoutX="10.0" layoutY="45.0" mnemonicParsing="false" onAction="#open_Delete" prefHeight="35.0" prefWidth="173.0" style="-fx-background-color: #7d6cc8;" text="Delete Frames" textFill="WHITE" />
+                  <Button fx:id="btn_save" mnemonicParsing="false" onAction="#saveVideo" prefHeight="35.0" prefWidth="173.0" style="-fx-background-color: #7d6cc8;" text="Save" textFill="WHITE" />
+                  <Button fx:id="btn_undo" layoutX="10.0" layoutY="80.0" mnemonicParsing="false" onAction="#Undo" prefHeight="35.0" prefWidth="173.0" style="-fx-background-color: #7d6cc8;" text="Undo" textFill="WHITE" />
+
+               </children></VBox>
+         </left>
+         <center>
+            <SplitPane dividerPositions="0.8304423243712056" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" BorderPane.alignment="CENTER">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="373.0" prefWidth="477.0">
+                     <children>
+                        <MediaView fx:id="mediaView" fitHeight="350.0" fitWidth="500.0" layoutX="14.0" layoutY="15.0" />
+                     </children>
+                  </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <Button fx:id="btn_pause" layoutX="238.0" layoutY="25.0" mnemonicParsing="false" onAction="#pauseMedia" text="Pause" />
+                        <Button fx:id="btn_play" layoutX="98.0" layoutY="25.0" mnemonicParsing="false" onAction="#playMedia" text="Play" />
+                        <Button fx:id="btn_reset" layoutX="370.0" layoutY="25.0" mnemonicParsing="false" onAction="#resetMedia" text="Reset" />
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

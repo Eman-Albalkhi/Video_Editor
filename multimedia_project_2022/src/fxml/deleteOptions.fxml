@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="scene_delete" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.DeleteController">
+    <children>
+        <SplitPane dividerPositions="0.135678391959799" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0">
+            <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #7d6cc8;">
+                    <children>
+                        <HBox layoutY="1.0" prefHeight="51.0" prefWidth="598.0">
+                            <children>
+                                <Label text="Delete Options" textFill="WHITE">
+                                    <HBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="15.0" />
+                                    </HBox.margin></Label>
+                                <Button fx:id="btn_back" mnemonicParsing="false" onAction="#backMain" text="Back">
+                                    <HBox.margin>
+                                        <Insets top="10.0" />
+                                    </HBox.margin>
+                                </Button>
+                            </children>
+                        </HBox>
+                    </children>
+                </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="134.0" prefWidth="502.0">
+                    <children>
+                        <VBox prefHeight="342.0" prefWidth="598.0">
+                            <children>
+                        <HBox layoutX="10.0" layoutY="10.0" prefHeight="43.0" prefWidth="598.0">
+                           <children>
+                              <Label text="start">
+                                 <HBox.margin>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField fx:id="txb_start">
+                                 <HBox.margin>
+                                    <Insets bottom="10.0" left="15.0" right="10.0" top="10.0" />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="43.0" prefWidth="598.0">
+                           <children>
+                              <Label text="end">
+                                 <HBox.margin>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField fx:id="txb_end">
+                                 <HBox.margin>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="43.0" prefWidth="598.0">
+                            <children>
+                                <Button fx:id="btn_delete" mnemonicParsing="false" onAction="#deleteFrames" text="Delete">
+                                    <VBox.margin>
+                                        <Insets bottom="10.0" left="100.0" right="10.0" />
+                                    </VBox.margin>
+                                 <HBox.margin>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </HBox.margin>
+                                </Button>
+                            </children>
+                        </HBox>
+                        </children>
+                    </VBox>
+                </children></AnchorPane>
+            </items>
+        </SplitPane>
+    </children>
+</AnchorPane>
